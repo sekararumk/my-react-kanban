@@ -6,10 +6,16 @@ import TagList from './TagList'
 const Card = ({ children }) => {
   return (
       <>
-        <Header />
-        {children}
-        <TagList />
-        <Avatar />
+      <div className='grid grid-cols-4 gap-6 mt-7'>
+          <div className='bg-white rounded-lg shadow-md'>
+            <div class="flex flex-row flex-wrap justify-between items-center">
+            <Header />
+            {children}
+            </div>
+            <TagList />
+            <Avatar />
+          </div>
+      </div>
       </>
   )
 }

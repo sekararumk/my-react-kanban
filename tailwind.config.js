@@ -4,7 +4,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-orange':'#F56C6C',
+      }
+    },
+  },
+  fontFamily: {
+    poppins: ["Poppins"]
   },
   plugins: [],
 }
